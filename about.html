@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>О нас - DataSafe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header> 
+  <a href="index.html" class="logo-container">
+  <img src="images/logo.png" alt="DataSafe" class="logo">
+  <span class="brand-name">DataSafe</span>
+  </a>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html" class="active">О нас</a>
+      <a href="register.html">Регистрация</a>
+    </nav>
+  </header>
+<main>
+  <section class="about-mission">
+    <h2>Наша миссия</h2>
+    <p>
+      В DataSafe мы верим, что каждый имеет право на безопасность своих данных.
+      Наша миссия — обеспечить надёжную защиту информации в цифровом мире.
+      Мы стремимся сделать технологии безопасными, понятными и доступными для всех: от частных лиц до крупных организаций.
+    </p>
+  </section>
+
+  <section class="about-values">
+    <h2>Наши ценности</h2>
+    <ul>
+      <li><strong>Надёжность:</strong> Мы гарантируем защиту ваших данных 24/7.</li>
+      <li><strong>Прозрачность:</strong> Вы всегда знаете, что и как мы защищаем.</li>
+      <li><strong>Профессионализм:</strong> Только сертифицированные специалисты и проверенные решения.</li>
+      <li><strong>Инновации:</strong> Мы применяем самые современные технологии и методики.</li>
+    </ul>
+  </section>
+
+  <section class="carousel-section">
+  <h2>Наша команда</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left">&#8592;</button>
+
+    <div class="carousel-track">
+      <div class="member-card">
+        <img src="images/timur.jpg" alt="Тимур">
+        <p><strong>Тимур</strong><br>Генеральный директор</p>
+      </div>
+      <div class="member-card">
+        <img src="images/danik.jpg" alt="Даниил">
+        <p><strong>Даниил</strong><br>Аналитик</p>
+      </div>
+      <div class="member-card">
+        <img src="images/ramazan.jpg" alt="Рамазан">
+        <p><strong>Рамазан</strong><br>Разработчик</p>
+      </div>
+         </div>
+
+    <button class="carousel-btn right">&#8594;</button>
+  </div>
+</section>
+  <section class="about-achievements">
+    <h2>Наши достижения</h2>
+    <ul>
+      <li>10+ лет работы в сфере информационной безопасности</li>
+      <li>Более 300 защищённых проектов</li>
+      <li>Сертифицированы по стандартам ISO/IEC 27001</li>
+      <li>Партнёрство с государственными и частными структурами</li>
+    </ul>
+  </section>
+</main>
+
+  <footer>
+    <p>Контакты: info@datasafe.kz</p>
+    <p>© 2025 DataSafe</p>
+  </footer>
+<script>
+  const track = document.querySelector('.carousel-track');
+  const btnLeft = document.querySelector('.carousel-btn.left');
+  const btnRight = document.querySelector('.carousel-btn.right');
+
+  let scrollAmount = 0;
+
+  btnLeft.addEventListener('click', () => {
+    track.scrollBy({ left: -220, behavior: 'smooth' });
+  });
+
+  btnRight.addEventListener('click', () => {
+    track.scrollBy({ left: 220, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация - DataSafe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <a href="index.html" class="logo-container">
+  <img src="images/logo.png" alt="DataSafe" class="logo">
+  <span class="brand-name">DataSafe</span>
+  </a>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="register.html" class="active">Регистрация</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Регистрация</h2>
+    <form id="regForm">
+      <label>Имя:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Пароль:</label>
+      <input type="password" id="password" required>
+
+      <label>Подтвердите пароль:</label>
+      <input type="password" id="confirmPassword" required>
+
+      <label>Выберите услугу:</label>
+      <select id="service">
+        <option value="">Выберите</option>
+        <option value="audit">Аудит</option>
+        <option value="consult">Консалтинг</option>
+        <option value="protection">Защита</option>
+      </select>
+
+      <button type="submit">Зарегистрироваться</button>
+      <p id="message"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Контакты: info@datasafe.kz</p>
+    <p>© 2025 DataSafe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
